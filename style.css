@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+#title,
+#description {
+    color: white;
+    font-weight: 500;
+}
+
+#title {
+    margin-top: 1.5rem;
+}
+
+#description {
+    margin: 0.5rem 0 1rem 0;
+}
+
+#canvas {
+    min-width: 1000px;
+    min-height: 600px;
+    border-radius: 0.5rem;
+}
+
+#legend {
+    min-width: 1000px;
+    margin: 1.5rem 0;
+}
+
+#tooltip {
+    visibility: hidden;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.tile:hover {
+    fill: white;
+    cursor: pointer;
+}
